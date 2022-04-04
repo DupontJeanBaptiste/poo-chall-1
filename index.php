@@ -1,10 +1,19 @@
 <?php
 require_once 'Bicycle.php';
 require_once 'Car.php';
+require_once 'Truck.php';
 
-$car = new Car("Red", 4, "Love", 100);
+$bicycle = new Bicycle('blue', 1);
+echo $bicycle->forward();
+echo $bicycle->dump();
+
+$car = new Car('green', 4, 'electric');
+echo $car->forward();
 echo $car->dump();
 
-echo $car->start();
-echo $car->forward();
-echo $car->brake();
+$truck = new Truck(100, 'blue', 4, 'fuel');
+echo $truck->dump();
+echo $truck->forward();
+echo $truck->dump();
+echo $truck->currentCharge();
+echo $truck->fillMax();

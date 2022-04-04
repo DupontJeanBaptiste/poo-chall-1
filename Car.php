@@ -2,16 +2,12 @@
 class Car
 {
     public function __construct(string $color
-     , int $currentSpeed
      , int $nbSeats
-     , int $nbWheels
      , string $typeEnergie
      , int $currentEnergie)
     {
         $this->color = $color;
-        $this->currentSpeed = $currentSpeed;
         $this->nbSeats = $nbSeats;
-        $this->nbWheels = $nbWheels;
         $this->typeEnergie = $typeEnergie;
         $this->currentEnergie = $currentEnergie;
     }
@@ -19,7 +15,7 @@ class Car
     private string $color;
     private int $currentSpeed;
     private int $nbSeats;
-    private int $nbWheels;
+    private int $nbWheels = 4;
     private string $typeEnergie;
     private int $currentEnergie;
 

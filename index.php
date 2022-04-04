@@ -2,7 +2,7 @@
 require_once 'Bicycle.php';
 require_once 'Car.php';
 
-$car = new Car("Red", 0, 4, 4, "Love", 100);
+$car = new Car("Red", 4, "Love", 100);
 echo $car->dump();
 
 echo $car->start();
